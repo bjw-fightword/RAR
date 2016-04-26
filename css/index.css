@@ -327,7 +327,6 @@ section{
 	background-repeat: no-repeat;
 	background-size: 1922px 318px;
 	background-position: center;
-	margin-top: -80px;
 }
 .Partne-logos-box:first-of-type{
 	display: block;
@@ -1936,7 +1935,7 @@ table {
 	}
 	#footer-top-logoo, #footer-top-two,#footer-top-three, #footer-top-four{
 		width: 100%;
-		padding-left: 30px;
+		padding: 0 20px;
 		height: 0;
 	}
 	#footer{
@@ -1963,7 +1962,7 @@ table {
 	}
 
 	#footer-bottom{
-		height: 300px;
+		height:260px;
 		position: relative;
 	}
 	#footer-bottom-one,#footer-bottom-three,#footer-bottom-two{
@@ -1973,14 +1972,14 @@ table {
 	}
 	#footer-bottom-two{
 		left: 0px;
-		top: 50px;
+		top: 33px;
 		text-align: center;
 
 	}
 	#footer-bottom-three{
 		left: 0px;
 		text-align: center;
-		top: 150px;
+		top: 117px;
 
 	}
 	#footer-bottom-one span{
@@ -2025,7 +2024,6 @@ table {
 	}
 	.sign-up-left,.sign-up-right{
 		width: 100%;
-		text-align: center;
 	}
 	.sign-up-right{
 		height: 50px;
@@ -2108,10 +2106,44 @@ table {
 	.sign-up-right .canguanbaoming{
 		display: none;
 	}
+	.left-boxa,.left-boxb,.left-boxc,.left-boxd,.left-boxe{
+		display: none;
+	}
+	.sign-up-titles{
+		display: block;
+		text-align: center;
+	}
+	.sign-up-h3{
+		text-align: center;
+	}
+	.schedule-guests .distinguished-gues-bottom-box #distinguished-gues-one+h3{
+		font-size: 18px;
+		left: 21px;
+		top: 130px;
+	}
+	.schedule-guests .distinguished-gues-bottom-box #distinguished-gues-two+h3{
+		font-size: 18px;
+		left: 113px;
+		top: 91px;
+	}
+	.schedule-guests .distinguished-gues-bottom-box #distinguished-gues-three+h3{
+		font-size: 18px;
+		top: 91px;
+		left: 203px;
+	}
 }
 @media(max-width: 320px){
 	#schedule-page-table .timetdTwo,#schedule-page-table .timetdOne{
 		padding: 0;
 		font-size: 10px;
+	}
+	#footer-bottom-two p, #footer-bottom-three p{
+		font-size: 10px;
+	}
+	#footer-bottom-one span a{
+		font-size: 10px;
+	}
+	.activity{
+		padding: 0 20px;
 	}
 }
