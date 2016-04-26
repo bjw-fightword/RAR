@@ -273,6 +273,7 @@ section{
 	height: 250px;
 	background: #888787;
 	margin-top: -80px;
+	margin-bottom: 0;
 }
 #Partne-logo{
 	width: 100%;
@@ -550,12 +551,10 @@ section{
 	background-position: center;
 }
 #guide-page-baidu-map{
-	background-image: url(../images/baidu-map.jpg);
-	background-repeat: no-repeat;
-	background-position: center;
 	max-width: 610px;
 	margin: -20px auto 0 auto;
 	height: 352px;
+	overflow: hidden;
 }
 #guide-page-traffic{
 	margin: 20px auto 0;
@@ -647,17 +646,18 @@ section{
 .schedule-page-position-map{
 	width: 100%;
 	height: 371px;
-	background: red;
+	z-index: 555 !important;
 	position: absolute;
 	top: -50px;
 	left: 0;
-	overflow: hidden;
-	z-index: 20;
-	background-image: url(../images/bigmap.jpg);
-	background-position: 0 50px;
-	background-repeat: no-repeat;
-	background-size: 100% ;
+	background-color: rgba(0,0,0,0);
 	display: none; 
+}
+.schedule-page-position-map iframe{
+	position: absolute;
+	top: 50px;
+	left: 0;
+	display: block;
 }
 #schedule-page-position-map p{
 	display: inline-block;
@@ -747,6 +747,9 @@ section{
 	position: absolute;
 	right: 10px;
 	top: 15px;
+	width: 14px;
+	height: 12px;
+	background-image: url(../images/daosanjiao.png);
 }
 #bottom-banner.bottom-banner{
 	margin-top: 0px;
@@ -952,7 +955,7 @@ section{
 	position: absolute !important;
 	top: 0 !important;
 	left: 207% !important;
-	
+	display: none;
 }
 .anniu-position{
 	position: relative;
@@ -1930,8 +1933,9 @@ table {
 		padding: 0 10px;
 	}
 	#bottom-banner{
-		background-size: 100% 100%;
-		height:100px;
+		background-size:100%;
+		min-height:62px;
+		height: 0;
 	}
 	#footer-top-logoo, #footer-top-two,#footer-top-three, #footer-top-four{
 		width: 100%;
@@ -2012,15 +2016,16 @@ table {
 
 	#guide-page{
 		display: block;
-		background-size: 100% 100%;
-		height: 130px;
+		background-size: 100%;
+		min-height: 59px;
+		height: 0;
 	}
 	#information{
-		height: 80px;
+		height: 50px;
 	}
 	#information img{
-		margin-top: 25px;
-		height: 30px;
+		margin-top: 15px;
+		height: 20px;
 	}
 	.sign-up-left,.sign-up-right{
 		width: 100%;
@@ -2080,10 +2085,6 @@ table {
 	}
 	#schedule-page-time.schedule-page-time{
 		margin-top: 15px;
-	}
-	#guide-page-baidu-map{
-		background-size: 100%;
-		height: 241px;
 	}
 	#guide-page-subway h3{
 		font-size: 16px;
