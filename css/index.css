@@ -524,7 +524,7 @@ section{
 	margin: 0 auto;
 	margin-bottom: 20px;
 	max-width: 610px;
-	background-image: url(../images/time.jpg);
+	background-image: url(../images/dizhi.jpg);
 }
 #guide-page-time p{
 	color: #fff;
@@ -646,10 +646,18 @@ section{
 	background-repeat: no-repeat;
 }
 .schedule-page-position-map{
+	width: 100%;
+	height: 371px;
+	background: red;
 	position: absolute;
 	top: -50px;
 	left: 0;
+	overflow: hidden;
 	z-index: 20;
+	background-image: url(../images/bigmap.jpg);
+	background-position: 0 50px;
+	background-repeat: no-repeat;
+	background-size: 100% ;
 	display: none; 
 }
 #schedule-page-position-map p{
@@ -670,7 +678,6 @@ section{
 	background-position: 78px 15px;
 	background-repeat: no-repeat;
 }
-
 
 
 
@@ -741,9 +748,6 @@ section{
 	position: absolute;
 	right: 10px;
 	top: 15px;
-}
-#schedule-page-time.schedule-page-time{
-	margin-top: 50px;
 }
 #bottom-banner.bottom-banner{
 	margin-top: 0px;
@@ -901,7 +905,7 @@ section{
 .left-boxa{
 	position: absolute;
 	left: 30px;
-	top: -35px;
+	top: -38px;
 	width: 50px;
 	height: 50px;
 	background: url(../images/left-imagea.png);
@@ -1786,6 +1790,7 @@ table {
 	}
 	#nav ul li a{
 		font-size: 8px;
+		line-height: 19px;
 	}
 	#header{
 		height: 50px;
@@ -1926,13 +1931,12 @@ table {
 		padding: 0 10px;
 	}
 	#bottom-banner{
-		background-size: 100%;
-		height:63px;
-		margin-top:-41px;
+		background-size: 100% 100%;
+		height:100px;
 	}
 	#footer-top-logoo, #footer-top-two,#footer-top-three, #footer-top-four{
 		width: 100%;
-		padding-left: 50px;
+		padding-left: 30px;
 		height: 0;
 	}
 	#footer{
@@ -2089,5 +2093,25 @@ table {
 	#guide-page-subway ol li:last-of-type{
 		margin-bottom: 15px;
 	}
-	
+	#schedule-page-table .timetdOne{
+		width: 25%;
+		
+	}
+	#schedule-page-table .timetdTwo{
+		width: 75%;
+		
+	}
+	.schedule-page-position-map{
+		background-size: 100% 200px;
+		height: 250px;
+	}
+	.sign-up-right .canguanbaoming{
+		display: none;
+	}
+}
+@media(max-width: 320px){
+	#schedule-page-table .timetdTwo,#schedule-page-table .timetdOne{
+		padding: 0;
+		font-size: 10px;
+	}
 }
