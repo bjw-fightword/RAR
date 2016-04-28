@@ -374,17 +374,23 @@ section{
 	height: 140px;
 	background: #262626;
 }
-#footer-top-logoo,#footer-top-two{
-	width: 30%;
+#footer-top-logoo{
+	width: 20%;
 	height: 100%;
 	background: #333;
 	float: left;
 }
-#footer-top-three{
-	width: 30%;
+#footer-top-two{
+	width: 40%;
 	height: 100%;
+	background: #333;
 	float: left;
 	padding-left: 50px;
+}
+#footer-top-three{
+	width: 40%;
+	height: 100%;
+	float: left;
 }
 #footer-top-logoo{
 	position: relative;
@@ -413,10 +419,6 @@ section{
 	right: 0px;
 	top: 30px;
 }
-#footer-top-two{
-	
-	padding-left: 50px;
-}
 #footer-top-two h5,#footer-top-three h5{
 	font-size: 15px;
 	color: #fff;
@@ -432,7 +434,7 @@ section{
 	line-height: 27px;
 }
 #footer-bottom-one{
-	width: 30%;
+	width: 20%;
 	height: 100%;
 	padding: 40px 50px;
 	text-align: center;
@@ -453,7 +455,7 @@ section{
 	margin:  0 7px;
 }
 #footer-bottom-two{
-	width: 30%;
+	width: 40%;
 	height: 100%;
 	padding: 30px 50px;
 	text-align: left;
@@ -466,11 +468,10 @@ section{
 	line-height: 27px;
 }
 #footer-bottom-three{
-	width: 30%;
+	width: 40%;
     height: 100%;
     float: left;
     padding: 30px 0;
-    padding-left: 50px;
 }
 #return-top{
 	width: 45px;
@@ -491,9 +492,21 @@ section{
 	bottom: 155px;
 	background-repeat: no-repeat;
 }
+#weixin .erweima{
+	position: fixed;
+	width: 150px;
+	height: 200px;
+	right: 80px;
+	bottom: 135px;
+	background-image: url(../images/erweima.png);
+	background-size: 100%;
+	background-repeat: no-repeat;
+	display: none;
+}
 #guide-page.guide-page{
 	background-image :url(../images/banner2-en.jpg);
 }
+
 /* 主页完 */
 
 /* 会务指南 */
@@ -504,7 +517,106 @@ section{
 	background-repeat: no-repeat;
 	background-position: center;
     background-size: 1922px 300px;
+    text-align: center;
 }
+/* banner补充布局 */
+#guide-page h3{
+	text-align: center;
+	color:#075178;
+	font-size: 35px;
+	padding: 48px 0 0 0;
+	font-family: '微软雅黑';
+}
+#guide-page h1{
+	color: #1397df;
+	font-size: 48px;
+	font-family: '微软雅黑';
+	font-weight: normal;
+}
+#guide-page p{
+	color: #0b5077;
+	font-size: 25px;
+}
+#guide-page h2{
+	color: #1397df;
+	font-size: 35px;
+	font-weight: normal;
+	padding-top:20px; 
+}
+.head-left{
+	width: 45%;
+	height: 100%;
+	padding-left: 16%;
+	float: left;
+}
+.head-left h5{
+	color: #075177;
+	font-size: 35px;
+	font-family: '微软雅黑';
+	font-weight: normal;
+	padding-top: 170px;
+}
+.head-left h1{
+	color: #1198de;
+	font-size: 48px;
+}
+.head-left p{
+	color:#075177;
+	font-size: 25px;
+	padding-top: 10px;
+	letter-spacing: .2px; 
+}
+.head-left h2{
+	text-align: right;
+	color: #1198de;
+	font-size: 35px;
+	padding-right: 8px;
+	padding-top: 19px;
+	font-weight: normal;
+}
+.head-right{
+	width: 55%;
+	height: 100%;
+	float: left;
+	padding: 15px 20px;
+}
+.head-right ul {
+	width: 100%;
+	height: 100%;
+}
+.head-right ul li{
+	width: 15.5%;
+	height: 33.3%;
+	float: left;
+	overflow: hidden;
+}
+.head-right ul li img{
+	width: 100%;
+}
+.head-right ul li:nth-of-type(5){
+	background:rgba(111,172,201,0.5);
+}
+.head-right ul li:nth-of-type(9){
+	background:rgba(18,218,215,0.5);
+	text-align: center;
+}
+.head-right ul li:nth-of-type(9) p,.head-right ul li:nth-of-type(16) p{
+	font-size: 30px;
+	color:#fff;
+	line-height: 155px;
+	font-family: '微软雅黑';
+}
+.head-right ul li:nth-of-type(12){
+	background:rgba(123,214,206,0.8);
+}
+.head-right ul li:nth-of-type(13){
+	background:rgba(123,214,206,0.5);
+}
+.head-right ul li:nth-of-type(16){
+	background:#1296da;
+	text-align: center;
+}
+/*  banner补充布局 完 */
 #guide-page-zhinan{
 	background: #0a5880;
 	border-radius: 20px;
@@ -681,7 +793,7 @@ section{
 #schedule-page-time p:last-of-type{
 	float: right;
 }
-#schedule-page-position{
+.schedule-page-position{
 	margin: 0 auto;
     max-width: 610px;
     height: 50px;
@@ -690,7 +802,7 @@ section{
 	position: relative;
 	cursor: pointer;
 }
-#schedule-page-position>p{
+.schedule-page-position>p{
 	display: inline-block;
 	float: left;
 	color: #000;
@@ -719,7 +831,7 @@ section{
 	display: none; 
 	background-image: url(../images/bigmap.jpg);
 }
-#schedule-page-position-map p{
+.schedule-page-position-map p{
 	display: inline-block;
     float: left;
     color: rgb(255, 255, 255);
@@ -1256,7 +1368,7 @@ table {
 }
 /* 移动 */
 /* 修改移动版 */
-@media(max-width: 768px){
+@media(max-width: 900px){
 	#newlogo{
 		width: 30%;
 	}
@@ -1493,12 +1605,26 @@ table {
 		background-size: 30px;
 		bottom: 30px;
 	}
+	#weixin .erweima{
+		bottom: 30px;
+		right: 65px;
+	}
 	#guide-page{
 		display: block;
 		background-size: 100%;
 		min-height: 59px;
 		height: 0;
 	}
+
+
+
+
+
+
+
+
+
+
 	#information{
 		height: 50px;
 	}
@@ -1551,7 +1677,7 @@ table {
 	#guide-page-activity{
 		padding: 40px 0;
 	}
-	#schedule-page-position>p{
+	.schedule-page-position>p{
 		font-size: 12px;
 	}
 	#schedule-page-content p{
@@ -1629,7 +1755,10 @@ table {
 	.ENsectiontwo{
 		margin-bottom: 90px;
 	}
-	#footer-top-two p:eq(2)
+	#guide-page-time2 p span{
+		font-size: 14px;
+	}
+	
 }
 @media(max-width: 320px){
 	#schedule-page-table .timetdTwo,#schedule-page-table .timetdOne{
@@ -1644,5 +1773,11 @@ table {
 	}
 	.activity{
 		padding: 0 20px;
+	}
+	#guide-page-time2 p span{
+		font-size: 10px;
+	}
+	#guide-page-time2 p span:last-of-type{
+		right: 0;
 	}
 }

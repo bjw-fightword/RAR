@@ -24,9 +24,13 @@
 		<div class="clear"></div>
 	</header>
 	<div id="guide-page">
+		<!-- <h3>中国&nbsp;·&nbsp;金桥</h3>
+		<h1>第一届全球虚拟现实大会</h1>
+		<p>The First Global Virtual Reality Conference</p>
+		<h2>2016.Jun.02-03</h2> -->
 	</div>
 	<div id="information">
-		<img src="../images/dahuiyicheng.png" alt="">
+		<img src="./images/dahuiyicheng.png" alt="">
 		<p>大会议程</p>
 	</div>
 	<!-- 会议日程 -->
@@ -37,7 +41,7 @@
 					<p>2016年6月2日</p>
 					<p>VR/AR技术发展</p>
 				</div>
-				<div id="schedule-page-position">
+				<div class="schedule-page-position">
 					<p>地点：中国国际工商学院（上海浦东红枫路699号）</p>
 					<p class="dotu-logo">地图</p>
 					<div class="schedule-page-position-map">
@@ -469,7 +473,7 @@
 					<p>2016年6月3日</p>
 					<p>行业应用与投资</p>
 				</div>
-				<div id="schedule-page-position">
+				<div class="schedule-page-position">
 					<p>地点：中国国际工商学院（上海浦东红枫路699号）</p>
 					<p>地图</p>
 				</div>
@@ -899,11 +903,11 @@
 	<footer id="footer">
 		<div id="footer-top">
 			<div id="footer-top-logoo">
-				<img src="./images/newlogo.png" alt="">
+				<a href="index.html"><img src="./images/newlogo.png" alt=""></a>
 				<ul>
-					<li><img src="./images/wachat2new.png" alt=""></li>
-					<li><img src="./images/twwiter2.png" alt=""></li>
-					<li><img src="./images/facebook-hover.png" alt=""></li>
+					<li><a href=""><img src="./images/wachat2new.png" alt=""></a></li>
+					<li><a href="https://twitter.com/GvrcJameszhao"><img src="./images/twwiter2.png" alt=""></a></li>
+					<li><a href="https://www.facebook.com/gvrcshanghai/"><img src="./images/facebook-hover.png" alt=""></a></li>
 				</ul>
 				<span></span>
 			</div>
@@ -953,40 +957,16 @@
 		</div>
 	</footer>
 	<div id="return-top" class="return-top"></div>
-	<div id="weixin"></div>
+	<div id="weixin">
+		<div class="erweima">
+			
+		</div>
+	</div>
 
 </body>
 <script src="./js/jquery2.2.0.js"></script>
 <script src="./js/index.js"></script>
 <script>
-	$(function(){
-		$('.timetdTwo-click').each(function(i,v){
-			$(v).click(function(){
-				if($('.schedule-guests').eq(i).css('display')=='none'){
-					$('.schedule-guests').eq(i).stop();
-					$('.schedule-guests').eq(i).fadeIn();
-				}else{
-					$('.schedule-guests').eq(i).stop();
-					$('.schedule-guests').eq(i).fadeOut();
-				}
-			})
-		})
-		$('.name').each(function(i,v){
-			$(v).hover(function(){
-				$('.jiabinkuang').eq(i).stop();
-				$('.jiabinkuang').eq(i).fadeIn();
-			},function(){
-				$('.jiabinkuang').eq(i).stop();
-				$('.jiabinkuang').eq(i).fadeOut();
-			})
-		})
-		$('#schedule-page-position').click(function(){
-			$('.schedule-page-position-map').slideDown();
-		})
-		$('.ditu').click(function(e){
-			$('.schedule-page-position-map').slideUp();
-			e.stopPropagation();
-		})
-	})
+
 </script>
 </html>

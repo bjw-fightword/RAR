@@ -118,4 +118,133 @@ $(function(){
 	},function(){
 		$(this).find("#Participants-list").slideDown();
 	})
+	/*嘉宾合作伙伴轮播*/
+		var jiabin = $('.distinguished-gues-bottom-bigbox');
+		var btn = $('#btns ul li');
+		var index = 0;
+		function lunbo(type){
+			if(type=='r'){
+				index++;
+				if(index>=jiabin.length){
+					index = 0; 
+				}
+			}
+			else if(type=='l'){
+				index--;
+				if(index<=-1){
+					index=jiabin.length-1;
+				}
+			}
+			jiabin.hide();
+			jiabin.eq(index).fadeIn();
+			btn.css({background:'#757474'})
+			btn.eq(index).css({background:'#2a2a2a'})
+		}
+		var t = setInterval(function(){
+			lunbo('r')
+		},3000);
+		$('#distinguished-gues-bottom').hover(function(){
+			clearInterval(t);
+		},function(){
+			t=setInterval(function(){
+				lunbo('r')
+			},3000)
+		})
+		$('#arrow-left').click(function(){
+			lunbo('l');
+		})
+		$('#arrow-right').click(function(){
+			lunbo('r');
+		})
+		btn.click(function(){
+			var index1=$(this).index();
+			jiabin.hide();
+			jiabin.eq(index1).fadeIn();
+			btn.css({background:"#757474"});
+			btn.eq(index1).css({background:"#2a2a2a"});
+  	 		index=$(this).index();
+		})
+		/*合作伙伴轮播*/
+
+		var logos = $('.Partne-logos-box');
+		var logosbtn = $('#btns2 ul li');
+		var index2 = 0;
+		function logo(type2){
+			if(type2=='r'){
+				index2++;
+				if(index2>=logos.length){
+					index2 = 0; 
+				}
+			}
+			else if(type2=='l'){
+				index2--;
+				if(index2<=-1){
+					index2=logos.length-1;
+				}
+			}
+			logos.hide();
+			logos.eq(index2).fadeIn();
+			logosbtn.css({background:'#757474'})
+			logosbtn.eq(index2).css({background:'#2a2a2a'})
+		}
+		var t2 = setInterval(function(){
+			logo('r')
+		},3250);
+		$('#Partne-logo').hover(function(){
+			clearInterval(t2);
+		},function(){
+			t2=setInterval(function(){
+				logo('r')
+			},3250)
+		})
+		$('#arrow-left2').click(function(){
+			logo('l');
+		})
+		$('#arrow-right2').click(function(){
+			logo('r');
+		})
+		logosbtn.click(function(){
+			var index3=$(this).index();
+			logos.hide();
+			logos.eq(index3).fadeIn();
+			logosbtn.css({background:"#757474"});
+			logosbtn.eq(index3).css({background:"#2a2a2a"});
+  	 		index2=$(this).index();
+		})
+	/*大会议程下拉*/
+		$('.timetdTwo-click').each(function(i,v){
+			$(v).click(function(){
+				if($('.schedule-guests').eq(i).css('display')=='none'){
+					$('.schedule-guests').eq(i).stop();
+					$('.schedule-guests').eq(i).fadeIn();
+				}else{
+					$('.schedule-guests').eq(i).stop();
+					$('.schedule-guests').eq(i).fadeOut();
+				}
+			})
+		})
+		$('.name').each(function(i,v){
+			$(v).hover(function(){
+				$('.jiabinkuang').eq(i).stop();
+				$('.jiabinkuang').eq(i).fadeIn();
+			},function(){
+				$('.jiabinkuang').eq(i).stop();
+				$('.jiabinkuang').eq(i).fadeOut();
+			})
+		})
+		$('.schedule-page-position').click(function(){
+			$('.schedule-page-position-map').slideDown();
+		})
+		$('.ditu').click(function(e){
+			$('.schedule-page-position-map').slideUp();
+			e.stopPropagation();
+		})
+		/*底部二维码*/
+		$('#weixin').hover(function(){
+			$('#weixin .erweima').stop();
+			$('#weixin .erweima').fadeIn();
+		},function(){
+			$('#weixin .erweima').stop();
+			$('#weixin .erweima').fadeOut();
+		})
 })
